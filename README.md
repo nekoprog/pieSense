@@ -6,7 +6,7 @@ OPNSense Unofficial Build for Raspberry Pi 2 B+
 Setting up a build system for RPI2
 ==================================
 
-Install [FreeBSD](https://www.freebsd.org/) 11.1-RELEASE (i386)
+Install [FreeBSD 11.1-RELEASE (i386)](https://download.freebsd.org/ftp/releases/i386/i386/ISO-IMAGES/11.1/)
 on a machine with at least 25GB of hard disk (UFS partition)
 and at least 4GB of RAM to successfully build armv6 image.  All
 tasks require a root user.  Do the following to grab the repositories
