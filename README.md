@@ -9,13 +9,21 @@ Setting up a build system for RPI2
 Install [FreeBSD 11.1-RELEASE (i386)](https://download.freebsd.org/ftp/releases/i386/i386/ISO-IMAGES/11.1/)
 on a machine with at least 25GB of hard disk (UFS partition)
 and at least 4GB of RAM to successfully build armv6 image.  All
-tasks require a root user.  Do the following to grab the repositories
-(overwriting standard ports and src) and make armv6 image for RPI2:
+tasks require a root user.
 
-    # pkg install git u-boot-rpi2
+Remove i386 BROKEN marks from qemu ports
+
     # ln -sv /usr/local/bin/perl5.26.* /usr/local/bin/perl5.26.0
     # fetch https://raw.githubusercontent.com/nekoprog/pieSense/master/qemu-i368-makefile -o /usr/ports/emulators/qemu-sbruno/Makefile
-    # cd /usr/ports/emulators/qemu-sbruno && make -DBATCH install clean
+    # cd /usr/ports/emulators/qemu-user-static && make -DBATCH install clean
+    
+Install git and u-boot
+
+    # pkg install git u-boot-rpi2
+    
+Grab [OPNsense/tools](https://github.com/opnsense/tools) repositories
+(overwriting standard ports and src) and make armv6 image for RPI2:
+
     # cd /usr && git clone https://github.com/opnsense/tools
     # cd tools
     # make update ARCH=arm:armv6
