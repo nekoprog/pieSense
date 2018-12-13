@@ -18,7 +18,7 @@ tasks require a root user.  Do the following to grab the repositories
     # cd /usr/ports/emulators/qemu-sbruno && make -DBATCH install clean
     # cd /usr && git clone https://github.com/opnsense/tools
     # cd tools
-    # make update
+    # make update ARCH=arm:armv6
     # make base kernel ARCH=arm:armv6 KERNEL=SMP-RPI2
     # make xtools ARCH=arm:armv6
     # make packages ARCH=arm:armv6
