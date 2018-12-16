@@ -13,7 +13,6 @@ tasks require a root user.
 
 Remove i386 BROKEN marks from qemu ports and install qemu-user-static
 
-    # ln -sv /usr/local/bin/perl5.26.* /usr/local/bin/perl5.26.0
     # fetch https://raw.githubusercontent.com/nekoprog/pieSense/master/qemu-i368-makefile -o /usr/ports/emulators/qemu-sbruno/Makefile
     # cd /usr/ports/emulators/qemu-user-static && make -DBATCH install clean
     
