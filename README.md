@@ -1,8 +1,3 @@
-pieSense 19.1
-=============
-
-OPNSense 19.1 Unofficial Build for Raspberry Pi 2 B+
-
 Setting up a build system for RPI2
 ==================================
 
