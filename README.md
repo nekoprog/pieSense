@@ -24,7 +24,9 @@ Grab [OPNsense/tools](https://github.com/opnsense/tools) repositories
 
 Remove i386 BROKEN marks from qemu ports and install qemu-user-static
 
-    # fetch https://raw.githubusercontent.com/nekoprog/pieSense/master/qemu-i368-makefile -o /usr/ports/emulators/qemu-sbruno/Makefile
+    # sed -i -e 's/amd64 powerpc/i386 amd64 powerpc/1' /usr/ports/emulators/qemu-sbruno/Makefile
+    # sed -i -e '/BROKEN_i386/d' /usr/ports/emulators/qemu-sbruno/Makefile
+    # sed -i -e '/i386 host/d' /usr/ports/emulators/qemu-sbruno/Makefile
     # cd /usr/ports/emulators/qemu-user-static && make -DBATCH install clean
     
 Make armv6 image for RPI2:
