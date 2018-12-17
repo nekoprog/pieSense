@@ -1,5 +1,5 @@
 pieSense 19.1
-========
+=============
 
 OPNSense 19.1 Unofficial Build for Raspberry Pi 2 B+
 
@@ -38,3 +38,7 @@ Make armv6 image for RPI2:
     # make xtools
     # make packages
     # make arm-3G
+    
+Your pieSense is ready if it's here
+
+    # make print-IMAGESDIR
