@@ -20,7 +20,10 @@ Grab [OPNsense/tools](https://github.com/opnsense/tools) repositories
 
     # cd /usr && git clone https://github.com/opnsense/tools
     # cd tools
-    # make update ARCH=arm:armv6 SETTINGS=19.1
+    # sed -i -e 's/18.7/19.1/1' Makefile
+    # sed -i -e 's/SMP/SMP-RPI2/1' Makefile
+    # sed -i -e 's/${_ARCH}/arm:armv6/1' Makefile
+    # make update
 
 Remove i386 BROKEN marks from qemu ports and install qemu-user-static
 
@@ -31,7 +34,7 @@ Remove i386 BROKEN marks from qemu ports and install qemu-user-static
     
 Make armv6 image for RPI2:
 
-    # make base kernel ARCH=arm:armv6 KERNEL=SMP-RPI2 SETTINGS=19.1
-    # make xtools ARCH=arm:armv6 SETTINGS=19.1
-    # make packages ARCH=arm:armv6 SETTINGS=19.1
-    # make arm-3G ARCH=arm:armv6 SETTINGS=19.1
+    # make base kernel
+    # make xtools
+    # make packages
+    # make arm-3G
