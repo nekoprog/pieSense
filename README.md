@@ -32,13 +32,13 @@ Remove i386 BROKEN marks from qemu ports and install qemu-user-static
     # sed -i -e '/i386 host/d' /usr/ports/emulators/qemu-sbruno/Makefile
     # cd /usr/ports/emulators/qemu-user-static && make -DBATCH install clean
     
-Make armv6 image for RPI2:
+Make armv6 image for RPI2
 
     # make base kernel
     # make xtools
     # make packages
     # make arm-3G
     
-Your pieSense is ready if it's here
+Your pieSense is there if successfully built.
 
     # make print-IMAGESDIR
