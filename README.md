@@ -1,7 +1,7 @@
-pieSense
+pieSense 19.1
 ========
 
-OPNSense Unofficial Build for Raspberry Pi 2 B+
+OPNSense 19.1 Unofficial Build for Raspberry Pi 2 B+
 
 Setting up a build system for RPI2
 ==================================
@@ -20,7 +20,7 @@ Grab [OPNsense/tools](https://github.com/opnsense/tools) repositories
 
     # cd /usr && git clone https://github.com/opnsense/tools
     # cd tools
-    # make update ARCH=arm:armv6
+    # make update ARCH=arm:armv6 SETTINGS=19.1
 
 Remove i386 BROKEN marks from qemu ports and install qemu-user-static
 
@@ -31,7 +31,7 @@ Remove i386 BROKEN marks from qemu ports and install qemu-user-static
     
 Make armv6 image for RPI2:
 
-    # make base kernel ARCH=arm:armv6 KERNEL=SMP-RPI2
-    # make xtools ARCH=arm:armv6
-    # make packages ARCH=arm:armv6
-    # make arm-3G ARCH=arm:armv6
+    # make base kernel ARCH=arm:armv6 KERNEL=SMP-RPI2 SETTINGS=19.1
+    # make xtools ARCH=arm:armv6 SETTINGS=19.1
+    # make packages ARCH=arm:armv6 SETTINGS=19.1
+    # make arm-3G ARCH=arm:armv6 SETTINGS=19.1
