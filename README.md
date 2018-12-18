@@ -9,7 +9,6 @@ All tasks require a root user.
 Install git, gcc, gmake, cmake, python, pkgconf, pixman, bison, glib and u-boot
 
     # pkg install git gcc gmake cmake python pkgconf pixman bison glib u-boot-rpi2
-    # printf "CC=clang\nCXX=clang++\nCPP=clang-cpp" > /etc/src.conf
 
 Grab [OPNsense/tools](https://github.com/opnsense/tools) repositories
 (overwriting standard ports and src)
