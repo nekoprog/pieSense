@@ -6,9 +6,9 @@ on a machine with at least 25GB of hard disk (UFS partition)
 and at least 4GB of RAM to successfully build armv6 image.  All
 tasks require a root user.
 
-Install git, gcc, clang and u-boot
+Install git, gcc and u-boot
 
-    # pkg install git gcc6 arm-none-eabi-gcc clang35 u-boot-rpi2
+    # pkg install git arm-none-eabi-gcc u-boot-rpi2
 
 Grab [OPNsense/tools](https://github.com/opnsense/tools) repositories
 (overwriting standard ports and src)
