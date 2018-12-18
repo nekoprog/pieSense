@@ -29,6 +29,7 @@ Remove i386 BROKEN marks from qemu ports and install qemu-user-static
     
 Make armv6 image for RPI2
 
+    # cd /usr/tools
     # make base kernel
     # make xtools
     # make packages
