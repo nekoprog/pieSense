@@ -8,11 +8,7 @@ tasks require a root user.
 
 Install git, gcc, clang and u-boot
 
-    # pkg install git arm-none-eabi-gcc clang35 u-boot-rpi2
-
-Set clang ENV
-
-    # printf "CC=clang\nCXX=clang++\nCPP=clang-cpp" > /etc/make.conf
+    # pkg install git gcc6 arm-none-eabi-gcc clang35 u-boot-rpi2
 
 Grab [OPNsense/tools](https://github.com/opnsense/tools) repositories
 (overwriting standard ports and src)
