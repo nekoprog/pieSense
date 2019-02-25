@@ -15,9 +15,9 @@ Grab [OPNsense/tools](https://github.com/opnsense/tools) repositories
 
     # cd /usr && git clone https://github.com/opnsense/tools
     # cd tools
+    # make update
     # sed -i -e 's/${_ARCH}/arm:armv6/1' Makefile
     # sed -i -e 's/a10/rpi2/1' Makefile
-    # make update
     
 Make armv6 image for RPI2
 
