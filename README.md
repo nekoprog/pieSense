@@ -21,7 +21,6 @@ Grab [OPNsense/tools](https://github.com/opnsense/tools) repositories
     
 Make armv6 image for RPI2
 
-    # cd /usr/tools
     # make base 
     # make kernel
     # make xtools
