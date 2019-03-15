@@ -1,3 +1,5 @@
+Current pieSense image status: ![ci_status](https://api.cirrus-ci.com/github/nekoprog/pieSense.svg)
+
 Setting up a build system for RPI2
 ==================================
 
