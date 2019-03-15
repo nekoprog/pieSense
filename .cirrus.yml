@@ -10,8 +10,18 @@ task:
     - git pull https://github.com/nekoprog/tools
     - sed -i -e 's/${_ARCH}/arm:armv6/1' Makefile
     - sed -i -e 's/a10/rpi2/1' Makefile
-  stage3_script: make base 
-  stage4_script: make kernel
-  stage5_script: make xtools
-  stage6_script: make packages
-  stage7_script: make arm-3G
+  stage3_script:
+    - cd /usr/tools
+    - make base 
+  stage4_script:
+    - cd /usr/tools
+    - make kernel
+  stage5_script:
+    - cd /usr/tools
+    - make xtools
+  stage6_script:
+    - cd /usr/tools
+    - make packages
+  stage7_script:
+    - cd /usr/tools
+    - make arm-3G
