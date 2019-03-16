@@ -1,4 +1,4 @@
-![pieSense](https://github.com/nekoprog/pieSense/raw/master/opnsense-rpi2.png)
+![pieSense](https://github.com/nekoprog/pieSense/raw/master/opnsense-rpi2.jpg)
 
 Current pieSense image status: ![ci_status](https://api.cirrus-ci.com/github/nekoprog/pieSense.svg)
 
