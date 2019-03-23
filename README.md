@@ -34,3 +34,7 @@ Make armv6 image for RPI2
 Your pieSense is there if successfully built
 
     # make print-IMAGESDIR
+
+Flash pieSense image to MicroSD card with your favourite tool. Eg: dd, Win32DiskImager. Then copy all files from (MSDOSBOOT)[https://github.com/nekoprog/pieSense/MSDOSBOOT] into MSDOSBOOT partition on your flashed MicroSD card.
+
+Enjoy using your unofficial build of OPNsense. Stay safe.
