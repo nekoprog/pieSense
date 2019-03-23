@@ -1,0 +1,4 @@
+kernel=u-boot.bin
+kernel7=u-boot.bin
+dtoverlay=mmc
+temp_limit=80
