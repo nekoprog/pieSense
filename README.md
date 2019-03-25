@@ -10,9 +10,9 @@ on a machine with at least 25GB of hard disk (UFS partition)
 and at least 4GB of RAM to successfully build armv6 image.
 All tasks require a root user.
 
-Install git, qemu-user-static, arm-gnueabi-binutils and u-boot-rpi2
+Install git, qemu-user-static, arm-gnueabi-binutils, u-boot-rpi2 and rpi-firmware
 
-    # pkg install git qemu-user-static arm-gnueabi-binutils u-boot-rpi2
+    # pkg install git qemu-user-static arm-gnueabi-binutils u-boot-rpi2 rpi-firmware
 
 Grab [OPNsense/tools](https://github.com/opnsense/tools) repositories
 (overwriting standard ports and src)
